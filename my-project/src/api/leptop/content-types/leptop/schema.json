@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leptops",
+  "info": {
+    "singularName": "leptop",
+    "pluralName": "leptops",
+    "displayName": "leptop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hpzbook": {
+      "type": "string",
+      "required": true
+    },
+    "lenova": {
+      "type": "string"
+    },
+    "acer": {
+      "type": "string"
+    }
+  }
+}
