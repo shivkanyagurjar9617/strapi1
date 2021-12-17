@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itemes",
+  "info": {
+    "singularName": "iteme",
+    "pluralName": "itemes",
+    "displayName": "itemes"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mobile": {
+      "type": "string",
+      "required": true
+    },
+    "leptop": {
+      "type": "string",
+      "required": true
+    },
+    "tv": {
+      "type": "string",
+      "required": true
+    },
+    "cooler": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

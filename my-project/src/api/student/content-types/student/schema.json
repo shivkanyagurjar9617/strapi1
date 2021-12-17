@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "students",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "mobileno": {
+      "required": true,
+      "type": "decimal"
+    },
+    "fathername": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

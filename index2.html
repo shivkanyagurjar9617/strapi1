@@ -10,22 +10,26 @@
     <body>
         <div class="container">
             <form class="w-50 offset-3 myregistrationform">
-                <h1 class="text-center">User Registration</h1>
+                <h1 class="text-center">costemor Registration</h1>
                 <div class="mb-3">
-                  <label for="name" class="form-label">name</label>
-                  <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
+                  <label for="mobile" class="form-label">mobile</label>
+                  <input type="text" name="mobile" class="form-control" id="mobile" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text"></div>
                 </div>
                 <div class="mb-3">
-                    <label for="address" class="form-label">address</label>
-                    <input type="text" name="address" class="form-control" id="address" aria-describedby="emailHelp">
+                    <label for="leptop" class="form-label">leptop</label>
+                    <input type="text" name="leptop" class="form-control" id="leptop" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text"></div>
                   </div>
-                  <label for="fathername" class="form-label">fathername</label>
-                  <input type="text" name="fathername" class="form-control" id="fathername" aria-describedby="emailHelp">
+                  <label for="tv" class="form-label">tv</label>
+                  <input type="text" name="tv" class="form-control" id="tv" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text"></div>
                 </div>
-            
+                <div class="mb-3">
+                  <label for="cooler" class="form-label">cooler</label>
+                  <input type="text" name="cooler" class="form-control" id="cooler" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
             
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -40,20 +44,21 @@
                 //alert('ok');
 
                 var d = {
-                            "id": 3,
-                            "attributes": {
-                            "name": $(this).find('input[name="name"]').val(),
-                            "createdAt": "2021-12-11T11:26:40.284Z",
-                            "updatedAt": "2021-12-11T11:26:40.284Z",
-                            "publishedAt": "2021-12-11T11:26:40.282Z",
-                            "address": $(this).find('input[name="address"]').val(),
-                            "mobileno": 0,
-                            "fathername": $(this).find('input[name="fathername"]').val(),
-                            }
+                            "mobile": $(this).find('input[name="mobile"]').val(),
+                            "leptop": $(this).find('input[name="leptop"]').val(),
+                            "tv": $(this).find('input[name="tv"]').val(),
+                            "cooler": $(this).find('input[name="cooler"]').val(),
+                            "createdAt": "2021-12-11T07:28:57.683Z",
+                            "updatedAt": "2021-12-11T07:28:57.683Z",
+                            "publishedAt": "2021-12-11T07:28:57.681Z"
+                            
                         }
+                        
+                        
+
                         $.ajax({
-                            url:'http://localhost:1337/api/students',
-                            type:'GET',
+                            url:'http://localhost:1337/api/itemes',
+                            type:'POST',
                             data:JSON.stringify(d),
                             contentType:'application/json',
                             success : function(result,status,xhr){

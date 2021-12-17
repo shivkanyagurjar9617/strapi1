@@ -67,6 +67,10 @@
       "type": "string",
       "required": true,
       "default": "password"
+    },
+    "mobileno": {
+      "required": true,
+      "type": "biginteger"
     }
   }
 }
